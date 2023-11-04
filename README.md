@@ -34,9 +34,9 @@ Le analisi di bilancio sono fornite come oggetti tramite l'URL /analisi/...
 SCHEMA E-R
 			 1	     M
 		AZIENDE <--------+---> CONTO ECONOMICO
-				 |
-				 |   M
-				 +---> STATO PATRIMONIALE
+  			 
+			 1	    M
+		AZIENDE <--------+--->STATO PATRIMONIALE
 				 
 API
 
