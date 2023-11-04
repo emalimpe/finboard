@@ -43,6 +43,8 @@ API
   +-----+	
   | GET |
   +-----+
+
+  
     • Analisi controller
            /analisi/{azienda}/{anno}
                 → recupera l’analisi (composta da CE ed SP) relativa ad un’azienda specifica 
@@ -97,6 +99,7 @@ API
   +--------+	
   | DELETE |
   +--------+	
+  
   
       • Aziende controller
 	   /aziende/{nome}
