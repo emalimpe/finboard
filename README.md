@@ -7,6 +7,8 @@ isa-backend/src/main/resources/application.properties:
 				spring.datasource.password=Password123#@!
 				
 ----------------------------------FRONTEND--------------------------------------------------
+
+
 Semplice applicazione che si interfaccia con il backend per recuperare i dati relativi 
 ai bilanci e le analisi dei bilanci aziendali forniti.
 
@@ -22,6 +24,8 @@ dei conti economici
 
 
 ----------------------------------BACKEND---------------------------------------------------
+
+
 REST API per il recupero delle informazioni relative ai documenti di bilancio delle
 aziende contenute in un db mysql. 
 
