@@ -1,0 +1,27 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+h2 { color: #ac9c12; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 10 10 10px; text-align: left; margin-left: 40px;}
+
+.example-card{
+ min-width: 600px;
+}
+
+.example-full-width {
+  text-align: center;
+  width: 100%;
+}
+
+
+
+li{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+li > p {
+  margin-bottom:0;
+}

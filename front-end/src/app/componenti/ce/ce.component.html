@@ -1,0 +1,110 @@
+<button class="button-30" role="button" appHighlight (click)="onClickChange()">CHANGE to {{notstatus.toUpperCase()}}</button>
+<br/>
+<br/>
+<h2>CONTO ECONOMICO</h2>
+<br/>
+<br/>
+<h2>{{status}}</h2>
+<br/>
+<br/>
+<div [ngSwitch]="status">
+    <div *ngSwitchCase="'today'">
+    <li *ngFor="let a of ces, index as i">
+        <ul>
+            <mat-card class="example-card" appHighlight>
+                <mat-card-header>
+                <mat-card-title>CONTO ECONOMICO : {{a.idAzienda.nome}}</mat-card-title>
+                <mat-card-subtitle>ANNO : {{a.stilatura.slice(0,4)}}</mat-card-subtitle>
+                <mat-card-subtitle>fatturato : {{a.valoreProduzione}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions>
+                <button mat-button (click)="showCE(i,a)">Show</button>
+                </mat-card-actions>
+            </mat-card>
+
+            <br/>
+        </ul> 
+        <p *ngIf="show && i === indice;then bloccoIf else bloccoElse">Sono visibile</p>
+    </li>
+    </div>
+
+    <div *ngSwitchCase="'storico'">
+        <li *ngFor="let a of cesStorico, index as i">
+            <ul>
+                <mat-card class="example-card" appHighlight>
+                    <mat-card-header>
+                    <mat-card-title>CONTO ECONOMICO : {{a.idAzienda.nome}}</mat-card-title>
+                    <mat-card-subtitle>ANNO : {{a.stilatura.slice(0,4)}}</mat-card-subtitle>
+                    <mat-card-subtitle>fatturato : {{a.valoreProduzione}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-actions>
+                    <button mat-button (click)="showCE(i,a)">Show</button>
+                    </mat-card-actions>
+                </mat-card>
+    
+                <br/>
+            </ul> 
+            <p *ngIf="show && i === indice;then bloccoIf else bloccoElse">Sono visibile</p>
+        </li>
+        </div>
+</div>
+
+<ng-template #bloccoIf>
+    <table style="background-color: #000">
+        <tr><td>VALORE PRODUZIONE</td><td>&euro;  {{obj.valoreProduzione.toFixed(2)}}</td></tr>
+        <tr><td>VALORE AGGIUNTO</td><td>&euro;  {{obj.valoreAggiunto.toFixed(2)}}</td></tr>
+        <tr><td>MOL</td><td>&euro;  {{obj.margineOperativoLordo.toFixed(2)}}</td></tr>
+        <tr><td>REDDITO OPERATIVO</td><td>&euro;  {{obj.redditoOperativo.toFixed(2)}}</td></tr>
+        <tr><td>REDDITO CORRENTE</td><td>&euro;  {{obj.redditoCorrente.toFixed(2)}}</td></tr>
+        <tr><td>REDDITO ANTE IMPOSTE</td><td>&euro;  {{obj.redditoAnteImposte.toFixed(2)}}</td></tr>
+        <tr><td>REDDITO NETTO</td><td>&euro;  {{obj.redditoNetto.toFixed(2)}}</td></tr>
+        <tr><td>IMPOSTE SUL REDDITO</td><td>&euro;  {{obj.imposteSulReddito.toFixed(2)}}</td></tr>
+        <tr><td>SALDO AREA STRAORDINARIA</td><td>&euro;  {{obj.saldoAreaStraordinaria.toFixed(2)}}</td></tr>
+        <tr><td>SALDO AREA FINANZIARIA</td><td>&euro;  {{obj.saldoAreaFinanziaria.toFixed(2)}}</td></tr>
+        <tr><td>COSTO PERSONALE</td><td>&euro;  {{obj.ammortamenti.toFixed(2)}}</td></tr>
+        <tr><td>AMMORTAMENTI</td><td>&euro;  {{obj.costoPersonale.toFixed(2)}}</td></tr>
+        <tr><td>COSTO MATERIE PRIME</td><td>&euro;  {{obj.variazioniSuMaterie.toFixed(2)}}</td></tr>
+        </table>
+</ng-template>
+<ng-template #bloccoElse> 
+    <p></p>
+</ng-template>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

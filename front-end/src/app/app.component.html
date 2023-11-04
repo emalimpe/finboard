@@ -1,0 +1,38 @@
+
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened appHighlightNavbar>
+        <br/>
+        <br/>
+        <br/>
+        <button class="button-30" role="button" appHighlight (click)="goHome()">AZIENDE</button>
+        <br/>
+        <br/>
+        <br/>
+        <button class="button-30" role="button" appHighlight (click)="goSP()">STATI PATRIMONIALI</button>
+        <br/>
+        <br/>
+        <br/>
+        <button class="button-30" role="button" appHighlight (click)="goCE()">CONTI ECONOMICI</button>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <button class="button-30" role="button" appHighlight (click)="goNewAzienda()">+ Nuova Azienda</button>
+    </mat-drawer>
+    <mat-drawer-content style="background-color:#003953">
+        <router-outlet routerLink="">
+            <!-- <app-analisi></app-analisi> -->
+            
+            
+            <!-- <app-aziende></app-aziende> -->
+            <!-- <app-ce></app-ce> -->
+            <!-- <app-sp></app-sp> -->
+        </router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
