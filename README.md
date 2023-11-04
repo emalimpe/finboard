@@ -32,6 +32,8 @@ aziende contenute in un db mysql.
 Le analisi di bilancio sono fornite come oggetti tramite l'URL /analisi/...
 
 SCHEMA E-R
+
+
 			 1	     M
 		AZIENDE <--------+---> CONTO ECONOMICO
   			 
