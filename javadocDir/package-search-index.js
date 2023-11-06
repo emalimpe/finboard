@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.finboard.isa.isa"},{"l":"com.finboard.isa.isa.controller"},{"l":"com.finboard.isa.isa.model"},{"l":"com.finboard.isa.isa.model.funzioniDiAnalisi"},{"l":"com.finboard.isa.isa.repo"},{"l":"com.finboard.isa.isa.service"}];updateSearchResults();
